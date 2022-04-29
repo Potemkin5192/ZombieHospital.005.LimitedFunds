@@ -742,6 +742,8 @@ function showMyAd() {
 function viewableChangeHandler(viewable) {
     if(viewable) {
         showMyAd(); 
+    } else {
+      sounds.forEach(sound => {sound.pause()})
     }
 }
 
