@@ -743,7 +743,7 @@ function viewableChangeHandler(viewable) {
     if(viewable) {
         showMyAd(); 
     } else {
-      sounds.forEach(sound => {sound.pause()})
+      document.querySelector("#music_bg").pause()
     }
 }
 
